@@ -1,0 +1,1158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    scroll-behavior: smooth;
+}
+.container {
+    width: 100%;
+    height: 2050px;
+}
+.container > input[type="checkbox"]{
+    display: none;
+}
+.container > input[type="checkbox"]:checked + .navbar {
+    height: 17.3rem;
+}
+
+
+/* -------- NAVBAR ----------- */
+
+.navbar {
+    padding: 20px 120px 0px 150px;
+    width: 100%;
+    height: 80px;
+}
+.navbar > .img, input,.cart-mob {
+    display: none;
+}
+.navbar a > img {
+    width: 9.5rem;
+    height: 3rem;
+    float: left;
+}
+.navbar ul {
+    list-style-type: none;
+    float: right;
+}
+.navbar li {
+    float: left;
+    margin: 8px 15px 0px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.navbar li > a > img { 
+    width: 2rem;
+    height: 1.8rem;
+    margin-top: -0.4rem;
+}
+
+/* -------- NAVBAR ----------- */
+
+
+/* -------- FEATURED PRODUCTS -------- */
+.All-Products {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: end;
+    justify-content:space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#333;
+    padding-inline: 180px;
+}
+.All-Products > select {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid orangered;
+    outline: 1px solid orangered;
+    font-size: 15px;
+}
+.featured-products {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+}
+.featured-products > .card {
+    width: 16rem;
+    height: 27rem;
+    margin-top: 55px;
+    margin-inline: 15px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.featured-products > .card:hover {
+    width: 17rem;
+    height: 42rem;
+    margin-top: 50px;
+}
+.featured-products > .card > img {
+    width: 100%;
+    height: 340px;
+}
+.featured-products > .card >a > img {
+    width: 100%;
+    height: 340px;
+}
+.featured-products > .card > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 7px 0px 7px 0px;
+}
+.featured-products > .card > p > i {
+    color: orangered;
+}
+/* -------- FEATURED PRODUCTS -------- */
+
+
+
+
+/* -------- LATEST PRODUCTS -------- */
+.latest-upper-products,.latest-bottom-products  {
+    width: 100%;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+}
+.latest-upper-products > .card, .latest-bottom-products > .card {
+    width: 16rem;
+    height: 27rem;
+    margin-inline: 15px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.latest-upper-products > .card:hover, .latest-bottom-products > .card:hover {
+    width: 17rem;
+    height: 42rem;
+    margin-top: 5px;
+}
+.latest-upper-products > .card {
+    margin-top: 10px;
+}
+.latest-bottom-products > .card {
+    margin-top: 10px;
+}
+.latest-upper-products > .card > img, .latest-bottom-products > .card > img {
+    width: 100%;
+    height: 340px;
+}
+.latest-upper-products > .card > p, .latest-bottom-products > .card > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 7px 0px 7px 0px;
+}
+.latest-upper-products > .card > p > i, .latest-bottom-products > .card > p > i {
+    color: orangered;
+}
+/* -------- LATEST PRODUCTS -------- */
+
+
+
+
+/* -------- PAGINATION -------- */
+.pagination {
+    width: 100%;
+    height: 140px;
+    padding-inline: 180px;
+    display: flex;
+    align-items: center;
+}
+.pagination button {
+    width: 50px;
+    height: 50px;
+    border: 1px solid orangered;
+    background-color: #fff;
+    font-size: 20px;
+    margin-inline: 8px;
+}
+.pagination button:hover {
+    background-color:orangered;
+    color: white;
+}
+/* -------- PAGINATION -------- */
+
+
+
+/* -------- FOOTER --------- */
+.footer {
+    width: 100%;
+    height: 340px;
+    border: 1px solid black;
+    background-color: black;
+    padding-inline: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.footer > .footer-content {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+}
+.footer > .footer-content > .card1 {
+    width: 36%;
+    height: 100%;
+    padding-top: 50px;
+    line-height: 50px;
+}
+.footer > .footer-content > .card1 > p {
+    color:rgba(255, 255, 255, 0.764);
+    font-size: 15px;
+}
+.footer > .footer-content > .card1 > a > .img {
+    width: 170px;
+    height: 50px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.footer > .footer-content > .card1 > .logo {
+    text-align: center;
+    line-height: 25px;
+}
+.footer > .footer-content > .card1 > p > a > img {
+    width: 210px;
+    height: 60px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.footer > .footer-content > .card2 {
+    width: 14%;
+    height: 100%;
+    padding-top: 65px;
+    text-align: center;
+}
+.footer > .footer-content > .card2 > ul {
+    list-style-type: none;
+    padding-top: 20px;
+}
+.footer > .footer-content > .card2 > ul > li {
+    margin-top: 7px;
+}
+.footer > .footer-content > .card2 > ul > li > a {
+    text-decoration: none;
+    font-size: 15px;
+    color:rgba(255, 255, 255, 0.764);
+}
+.footer > .footer-copyright {
+    width: 100%;
+    height: 30px;
+    border-top: 2px solid white;
+    text-align: center;
+    padding-top: 25px;
+}
+
+/* -------- FOOTER --------- */
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+@media only screen and (min-width:1141px) and (max-width:1165px) {
+    /* -------- FOOTER --------- */
+.footer > .footer-content > .card1 {
+    width: 36%;
+    height: 100%;
+    padding-top: 50px;
+    line-height: 30px;
+}
+.footer > .footer-content > .card1 > h3 {
+    margin-bottom: 30px;
+}
+.footer > .footer-content > .card1 > a > .img {
+    width: 165px;
+    height: 45px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* -------- FOOTER --------- */
+}
+
+
+@media only screen and (min-width:1118px) and (max-width:1141px) {
+    /* -------- FOOTER --------- */
+.footer > .footer-content > .card1 {
+    width: 36%;
+    height: 100%;
+    padding-top: 50px;
+    line-height: 30px;
+}
+.footer > .footer-content > .card1 > h3 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.footer > .footer-content > .card1 > a > .img {
+    width: 160px;
+    height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* -------- FOOTER --------- */
+}
+
+
+@media only screen and (min-width:1078px) and (max-width:1118px) {
+    /* -------- FOOTER --------- */
+.footer > .footer-content > .card1 {
+    width: 36%;
+    height: 100%;
+    padding-top: 50px;
+    line-height: 30px;
+    font-size: 15px;
+}
+.footer > .footer-content > .card1 > p {
+    font-size: 14px;
+}
+.footer > .footer-content > .card1 > h3 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.footer > .footer-content > .card1 > a > .img {
+    width: 155px;
+    height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.footer > .footer-content > .card2 > ul > li > a {
+    font-size: 14px;
+}
+.footer > .footer-copyright {
+    font-size: 14px;
+}
+
+/* -------- FOOTER --------- */
+}
+
+
+@media only screen and (min-width:1051px) and (max-width:1078px) {
+    /* -------- FOOTER --------- */
+.footer > .footer-content > .card1 {
+    width: 36%;
+    height: 100%;
+    padding-top: 50px;
+    line-height: 30px;
+}
+.footer > .footer-content > .card1 > p {
+    font-size: 14px;
+}
+.footer > .footer-content > .card1 > h3 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.footer > .footer-content > .card1 > a > .img {
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* -------- FOOTER --------- */
+}
+
+
+@media only screen and (min-width:1013px) and (max-width:1051px) {
+    /* -------- FOOTER --------- */
+.footer > .footer-content > .card1 > a > .img {
+    width: 140px;
+    height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+/* -------- FOOTER --------- */
+}
+
+
+@media only screen and (min-width:953px) and (max-width:1013px) {
+    /* -------- FOOTER --------- */
+    .footer > .footer-content > .card1 > p {
+        font-size: 14px;
+    }
+    .footer > .footer-content > .card1 > a > .img {
+        width: 130px;
+        height: 40px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    /* -------- FOOTER --------- */
+}
+
+
+@media only screen and (min-width:921px) and (max-width:953px) {
+    /* -------- FOOTER --------- */
+    .footer > .footer-content > .card1 > p {
+        font-size: 14px;
+    }
+    .footer > .footer-content > .card1 > a > .img {
+        width: 120px;
+        height: 40px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    .footer > .footer-content > .card2 > ul > li > a {
+        font-size: 14px;
+    }
+    .footer > .footer-copyright {
+        font-size: 14px;
+    }
+    /* -------- FOOTER --------- */
+}
+
+
+@media only screen and (min-width:839px) and (max-width:921px) {
+    /* -------- FOOTER --------- */
+    .footer > .footer-content > .card1 > p {
+        font-size: 14px;
+    }
+    .footer > .footer-content > .card1 > a > .img {
+        width: 108px;
+        height: 40px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    .footer > .footer-content > .card2 > ul > li > a {
+        font-size: 14px;
+    }
+    .footer > .footer-copyright {
+        font-size: 14px;
+    }
+    /* -------- FOOTER --------- */
+}
+
+
+@media only screen and (min-width:790px) and (max-width:839px) {
+    /* -------- FOOTER --------- */
+    .footer {
+        width: 100%;
+        height: 340px;
+        border: 1px solid black;
+        background-color: black;
+        padding-inline: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        margin-top: 79px;
+    }
+    .footer > .footer-content > .card1 > p, .footer > .footer-content > .card2 > ul > li > a, .footer > .footer-copyright {
+        font-size: 13px;
+    }
+    .footer > .footer-content > .card1 {
+        line-height: 25px;
+    }
+    .footer > .footer-content > .card1 > h3 {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 17px;
+    }
+    .footer > .footer-content > .card1 > a > .img {
+        width: 93px;
+        height: 35px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    .footer > .footer-content > .card1 > p > a > img {
+        width: 133px;
+        height: 50px;
+    }
+    /* -------- FOOTER --------- */
+}
+
+
+@media only screen and (min-width:744px) and (max-width:790px) {
+    /* -------- FOOTER --------- */
+    .footer {
+        margin-top: 70px;
+    }
+    .footer > .footer-content > .card1 > p, .footer > .footer-content > .card2 > ul > li > a, .footer > .footer-copyright {
+        font-size: 13px;
+    }
+    .footer > .footer-content > .card1 {
+        line-height: 25px;
+    }
+    .footer > .footer-content > .card1 > h3 {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 17px;
+    }
+    .footer > .footer-content > .card1 > a > .img {
+        width: 93px;
+        height: 35px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    .footer > .footer-content > .card1 > p > a > img {
+        width: 133px;
+        height: 50px;
+    }
+    .footer > .footer-content > .card2 > ul > li > a {
+        font-size: 12px;
+    }
+    /* -------- FOOTER --------- */
+}
+
+
+@media only screen and (min-width:645px) and (max-width:744px) {
+    /* -------- FOOTER --------- */
+    .footer {
+        margin-top: 71px;
+    }
+    .footer > .footer-content > .card1 > p, .footer > .footer-content > .card2 > ul > li > a, .footer > .footer-copyright {
+        font-size: 12px;
+    }
+    .footer > .footer-content > .card1 {
+        line-height: 25px;
+    }
+    .footer > .footer-content > .card1 > h3  {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 14px;
+    }
+    .footer > .footer-content > .card2 > h3 {
+        font-size: 14px;
+    }
+    .footer > .footer-content > .card1 > a > .img {
+        width: 77px;
+        height: 25px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    .footer > .footer-content > .card1 > p > a > img {
+        width: 113px;
+        height: 40px;
+    }
+    .footer > .footer-content > .card2 > ul > li > a {
+        font-size: 12px;
+    }
+    /* -------- FOOTER --------- */
+}
+
+
+@media only screen and (min-width:551px) and (max-width:645px) {
+/* -------- PAGINATION --------- */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+.pagination button {
+    padding-inline: 20px;
+}
+/* -------- PAGINATION --------- */
+
+
+    /* -------- FOOTER --------- */
+    .footer {
+        margin-top: 48px;
+    }
+    .footer > .footer-content > .card1 > p, .footer > .footer-content > .card2 > ul > li > a, .footer > .footer-copyright {
+        font-size: 10px;
+    }
+    .footer > .footer-content > .card1 {
+        line-height: 25px;
+    }
+    .footer > .footer-content > .card1 > h3  {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+    .footer > .footer-content > .card1 > a > .img {
+        width: 60px;
+        height: 25px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    .footer > .footer-content > .card1 > p > a > img {
+        width: 93px;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+    .footer > .footer-content > .card2 > h3 {
+        font-size: 13px;
+        margin-bottom: -5px;
+    }
+    .footer > .footer-content > .card2 > ul > li > a {
+        font-size: 10px;
+    }
+    /* -------- FOOTER --------- */
+}
+
+
+@media only screen and (min-width:425px) and (max-width:551px) {
+/* -------- PAGINATION --------- */
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+.pagination button {
+    padding-inline: 20px;
+}
+/* -------- PAGINATION --------- */
+
+
+/* -------- FOOTER --------- */
+.footer {
+    height:1050px;
+    margin-top: 120px;
+    padding-inline: 20px;
+}
+.footer > .footer-content {
+    width: 100%;
+    height: 1160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -172px;
+}
+.footer > .footer-content > .card1 {
+    width: 100%;
+    height: 15%;
+    line-height: 30px;
+    text-align: center;
+    font-size: 17px;
+}
+.footer > .footer-content > .card1 > p {
+    color:rgba(255, 255, 255, 0.764);
+    font-size: 17px;
+    margin: 25px 0px 25px 0px;
+}
+.footer > .footer-content > .card1 > a > .img {
+    width: 230px;
+    height: 50px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.footer > .footer-content > .card1 > .logo {
+    font-size: 17px;
+    text-align: center;
+    line-height: 18px;
+}
+.footer > .footer-content > .card1 > p > a > img {
+    margin-top: 95px;
+    margin-bottom: 20px;
+}
+.footer > .footer-content > .card2 {
+    width: 100%;
+    height: 15%;
+    padding-top: 250px;
+    font-size: 17px;
+}
+.footer > .footer-content > #card2 {
+    margin-top: -80px;
+}
+.footer > .footer-content > .card2 > ul > li > a {
+    font-size: 17px;
+}
+.footer > .footer-copyright {
+    font-size: 15px;
+}
+
+/* -------- FOOTER --------- */
+}
+
+
+@media only screen and (min-width:396px) and (max-width:425px) {
+/* -------- PAGINATION --------- */
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+.pagination button {
+    padding-inline: 20px;
+}
+/* -------- PAGINATION --------- */
+
+    /* -------- FOOTER --------- */
+    .footer {
+        height: 1090px;
+        margin-top: 120px;
+        padding-inline: 20px;
+    }
+    .footer > .footer-content {
+        width: 100%;
+        height: 1160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -142px;
+    }
+    .footer > .footer-content > .card1 {
+        width: 100%;
+        height: 15%;
+        line-height: 30px;
+        text-align: center;
+        font-size: 17px;
+    }
+    .footer > .footer-content > .card1 > p {
+        color:rgba(255, 255, 255, 0.764);
+        font-size: 17px;
+        margin: 25px 0px 25px 0px;
+    }
+    .footer > .footer-content > .card1 > a > .img {
+        width: 220px;
+        height: 50px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    .footer > .footer-content > .card1 > .logo {
+        font-size: 17px;
+        line-height: 18px;
+    }
+    .footer > .footer-content > .card1 > p > a > img {
+        margin-top: 135px;
+        margin-bottom: 20px;
+    }
+    .footer > .footer-content > .card2 {
+        width: 100%;
+        height: 15%;
+        padding-top: 158px;
+        font-size: 17px;
+        margin-top: 120px;
+    }
+    .footer > .footer-content > .card2 > ul > li > a {
+        font-size: 17px;
+    }
+    .footer > .footer-content > #card2 {
+        margin-top: 0px;
+    }
+    .footer > .footer-copyright {
+        font-size: 14px;
+    }
+    
+    /* -------- FOOTER --------- */
+}
+
+
+@media only screen and (max-width:396px) {
+
+/* -------- FOOTER --------- */
+.footer {
+    height: 1130px;
+    margin-top: 120px;
+    padding-inline: 20px;
+}
+.footer > .footer-content {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -142px;
+}
+.footer > .footer-content > .card1 {
+    width: 100%;
+    height: 15%;
+    line-height: 30px;
+    text-align: center;
+    font-size: 17px;
+}
+.footer > .footer-content > .card1 > h3 {
+    font-size: 19px;
+}
+.footer > .footer-content > .card1 > p {
+    color:rgba(255, 255, 255, 0.764);
+    font-size: 17px;
+    margin: 25px 0px 25px 0px;
+}
+.footer > .footer-content > .card1 > a > .img {
+    width: 180px;
+    height: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.footer > .footer-content > .card1 > .logo {
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+}
+.footer > .footer-content > .card1 > p > a > img {
+    margin-top: 125px;
+    margin-bottom: 20px;
+}
+.footer > .footer-content > .card2 {
+    width: 100%;
+    height: 15%;
+    padding-top: 158px;
+    font-size: 17px;
+    margin-top: 120px;
+}
+.footer > .footer-content > .card2 > ul > li > a {
+    font-size: 17px;
+}
+.footer > .footer-content > #card2 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.footer > .footer-copyright {
+    font-size: 14px;
+}
+/* -------- FOOTER --------- */
+}
+
+@media only screen and (max-width:1171px){
+    .All-Products {
+        padding-inline: 10px;
+    }
+}
+
+
+@media only screen and (min-width:357px) and (max-width:396px) {
+/* -------- PAGINATION --------- */
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+.pagination button {
+    padding-inline: 15px;
+}
+/* -------- PAGINATION --------- */
+}
+
+
+@media only screen and (min-width:347px) and (max-width:357px) {
+    /* -------- PAGINATION --------- */
+    .pagination {
+        margin-left: -15px;
+        display: flex;
+        justify-content: center;
+    }
+    .pagination button {
+        padding-inline: 15px;
+    }
+    /* -------- PAGINATION --------- */
+}
+
+
+@media only screen and (min-width:333px) and (max-width:347px) {
+    /* -------- PAGINATION --------- */
+    .pagination {
+        margin-left: -25px;
+        display: flex;
+        justify-content: center;
+    }
+    .pagination button {
+        padding-inline: 15px;
+    }
+    /* -------- PAGINATION --------- */
+}
+
+
+@media only screen and (max-width:333px) {
+    /* -------- PAGINATION --------- */
+    .pagination {
+        width: 50px;
+        padding-left: 140px;
+        display: flex;
+        justify-content: center;    
+    }
+    .pagination button {
+        width: 50px;
+        height: 50px;
+        padding-inline: 12px;
+    }
+    /* -------- PAGINATION --------- */
+}
+
+@media only screen and (min-width:1057px) and (max-width:1091px){
+    /* -------- FEATURED PRODUCTS -------- *,/ /* -------- LATEST PRODUCTS -------- */
+    .featured-products > .card, .latest-upper-products > .card, .latest-bottom-products > .card {
+        width: 16rem;
+        height: 27rem;
+        margin-inline: 15px;
+    }
+    /* -------- FEATURED PRODUCTS -------- *,/     /* -------- LATEST PRODUCTS -------- */
+
+}
+
+@media only screen and (min-width:953px) and (max-width:1057px){
+    /* -------- FEATURED PRODUCTS -------- *,/ /* -------- LATEST PRODUCTS -------- */
+    .featured-products > .card, .latest-upper-products > .card, .latest-bottom-products > .card {
+        width: 15rem;
+        height: 26rem;
+        margin-inline: 12px;
+    }
+    .featured-products > .card > img, .latest-upper-products > .card > img, .latest-bottom-products > .card > img {
+        height: 320px;
+    }
+    .featured-products > .card > a > img {
+        height: 320px;
+    }   
+    /* -------- FEATURED PRODUCTS -------- *,/ /* -------- LATEST PRODUCTS -------- */
+}
+
+
+@media only screen and (min-width:861px) and (max-width:953px){
+    /* -------- FEATURED PRODUCTS -------- *,/ /* -------- LATEST PRODUCTS -------- */
+    .featured-products > .card, .latest-upper-products > .card, .latest-bottom-products > .card {
+        width: 15rem;
+        height: 26rem;
+        margin-inline: 10px;
+    }
+    .featured-products > .card > img, .latest-upper-products > .card > img, .latest-bottom-products > .card > img {
+        height: 270px;
+    }
+    .featured-products > .card > a > img {
+        height: 270px;
+    }
+    /* -------- FEATURED PRODUCTS -------- *,/ /* -------- LATEST PRODUCTS -------- */
+}
+
+@media only screen and (min-width:807px) and (max-width:861px){
+    /* -------- FEATURED PRODUCTS -------- */ /* -------- LATEST PRODUCTS -------- */
+    .featured-products > .card, .latest-upper-products > .card, .latest-bottom-products > .card {
+        margin-inline: 10px;
+    }
+    .featured-products > .card > img, .latest-upper-products > .card > img, .latest-bottom-products > .card > img {
+        height: 260px;
+    }
+    .featured-products > .card > a > img {
+        height: 260px;
+    }
+    /* -------- FEATURED PRODUCTS -------- */ /* -------- LATEST PRODUCTS -------- */
+}
+
+
+@media only screen and (min-width:769px) and (max-width:807px){
+    /* -------- FEATURED PRODUCTS -------- */ /* -------- LATEST PRODUCTS -------- */
+    .featured-products > .card, .latest-upper-products > .card, .latest-bottom-products > .card {
+        margin-inline: 10px;
+    }
+    .featured-products > .card > img, .latest-upper-products > .card > img, .latest-bottom-products > .card > img {
+        height: 250px;
+    }
+    .featured-products > .card > a > img {
+        height: 250px;
+    }
+    /* -------- FEATURED PRODUCTS -------- */ /* -------- LATEST PRODUCTS -------- */
+}
+
+
+@media only screen and (min-width:720px) and (max-width:769px){
+    /* -------- FEATURED PRODUCTS -------- */ /* -------- LATEST PRODUCTS -------- */
+    .featured-products > .card, .latest-upper-products > .card, .latest-bottom-products > .card {
+        margin-inline: 10px;
+    }
+    .featured-products > .card > img, .latest-upper-products > .card > img, .latest-bottom-products > .card > img {
+        width: 100%;
+        height: 240px;
+    }
+    .featured-products > .card > a > img {
+        width: 100%;
+        height: 240px;
+    }
+    /* -------- FEATURED PRODUCTS -------- */ /* -------- LATEST PRODUCTS -------- */
+}
+
+
+@media only screen and (min-width:656px) and (max-width:720px){
+    /* -------- FEATURED PRODUCTS -------- */ /* -------- LATEST PRODUCTS -------- */
+    .featured-products > .card, .latest-upper-products > .card, .latest-bottom-products > .card {
+        margin-inline: 10px;
+    }
+    .featured-products > .card > img, .latest-upper-products > .card > img, .latest-bottom-products > .card > img {
+        width: 100%;
+        height: 220px;
+    }
+    .featured-products > .card > a > img {
+        width: 100%;
+        height: 220px;
+    }
+    /* -------- FEATURED PRODUCTS -------- */ /* -------- LATEST PRODUCTS -------- */
+}
+
+
+@media only screen and (max-width:656px){
+    .featured-products, .latest-upper-products, .latest-bottom-products {
+        flex-wrap: wrap;
+        margin-bottom: 653px;
+    }
+
+    /* -------- FEATURED PRODUCTS -------- */ /* -------- LATEST PRODUCTS -------- */
+    .featured-products > .card, .latest-upper-products > .card, .latest-bottom-products > .card {
+        margin-inline: 10px;
+        margin-top: 100px;
+    }
+    .featured-products > .card:hover, .latest-upper-products > .card:hover,.latest-bottom-products > .card:hover {
+        width: 16.5rem;
+        height: 27.5rem;
+        margin-top: 90px;
+    }
+    .featured-products > .card > img, .latest-upper-products > .card > img, .latest-bottom-products > .card > img {
+        width: 100%;
+        height: 350px;
+    }
+    .featured-products > .card > p, .latest-upper-products > .card > p, .latest-bottom-products > .card > p {
+        text-align: center;
+    }
+    /* -------- FEATURED PRODUCTS -------- */ /* -------- LATEST PRODUCTS -------- */
+}
+
+@media only screen and (max-width:552px){
+    /* -------- FEATURED PRODUCTS -------- */ /* -------- LATEST PRODUCTS -------- */
+    .featured-products, .latest-upper-products, .latest-bottom-products {
+        flex-wrap: wrap;
+        margin-bottom: 1739px;
+    }
+    /* -------- FEATURED PRODUCTS -------- */ /* -------- LATEST PRODUCTS -------- */
+}
+
+
+
+@media only screen and (min-width:352px) and (max-width:394px){
+    /* -------- FEATURED PRODUCTS -------- */
+    .All-Products {
+        padding-inline: 25px;
+    }
+    .All-Products > h2 {
+        font-size: 20px;
+    }
+    .All-Products > select {
+        width: 150px;
+        height: 40px;
+        margin-bottom: -5px;
+    }
+    /* -------- FEATURED PRODUCTS -------- */
+}
+
+
+@media only screen and (min-width:315px) and (max-width:352px){
+    /* -------- FEATURED PRODUCTS -------- */
+    .All-Products {
+        padding-inline: 15px;
+    }
+    .All-Products > h2 {
+        font-size: 20px;
+    }
+    .All-Products > select {
+        width: 140px;
+        height: 40px;
+        margin-bottom: -5px;
+    }
+    /* -------- FEATURED PRODUCTS -------- */
+}
+
+
+
+@media only screen and (min-width:808px) and (max-width:1065px){
+    /* -------- NAVBAR ----------- */
+    .navbar {
+        padding: 20px 40px 0px 60px;
+    }
+    /* -------- NAVBAR ----------- */
+
+
+    /* -------- POPULAR PRODUCTS -------- */
+    .popular-products > img {
+        width: 330px;
+        height: 330px;
+        margin: 10px;
+    }
+    /* -------- POPULAR PRODUCTS -------- */
+}
+
+
+@media only screen and (min-width:733px) and (max-width:808px){
+    /* -------- NAVBAR ----------- */
+    .navbar {
+        padding: 20px 20px 0px 40px;
+    }
+    .navbar li {
+        margin: 8px 10px 0px 10px;
+    }
+    /* -------- NAVBAR ----------- */
+}
+
+@media only screen and (min-width:649px) and (max-width:733px){
+    /* -------- NAVBAR ----------- */
+    .navbar {
+        padding: 20px 20px 0px 40px;
+    }
+    .navbar li {
+        margin: 8px 10px 0px 10px;
+    }
+    .navbar a {
+        font-size: 0.9rem;
+    }
+    /* -------- NAVBAR ----------- */
+}
+
+
+@media only screen and (min-width:587px) and (max-width:649px){
+    /* -------- NAVBAR ----------- */
+    .navbar {
+        padding: 20px 20px 0px 40px;
+    }
+    .navbar li {
+        margin: 8px 4px 0px 8px;
+    }
+    .navbar a {
+        font-size: 0.9rem;
+    }
+    /* -------- NAVBAR ----------- */
+}
+
+
+@media only screen and (min-width:300px) and (max-width:587px){
+    /* -------- NAVBAR ----------- */
+    .navbar {
+        padding: 20px 30px 0px 40px;
+        overflow: hidden;
+    }
+
+    /* ----Toggle button----- */
+    .navbar > .img {
+        display: block;
+        width: 2.2rem;
+        height: 2.2rem;
+        float: right;
+        margin-top: 5px;
+    }
+    .navbar > a > .cart-mob {
+        display: block;
+        margin-top: 3px;
+        width: 2.2rem;
+        height: 2rem;
+        float: right;
+        margin-inline:8px;
+    }
+    .navbar li:nth-child(1){
+        margin-top: 80px;
+    }
+    .navbar ul > li:nth-last-of-type(1){
+        display: none;
+    }
+    .navbar ul {
+        background-color:#333;
+        height: 250px;
+    }
+    .navbar li {
+        text-align: center;
+        margin-bottom: 18px;
+        font-weight:600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .navbar a {
+        color: white;
+        font-size: 0.9rem;
+    }
+    .navbar ul,.navbar li {
+        float: none;
+    }
+    
+    /* -------- NAVBAR ----------- */
+}
+
+
